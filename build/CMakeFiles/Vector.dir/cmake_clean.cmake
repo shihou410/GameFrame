@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Vector.dir/main.cpp.o"
   "CMakeFiles/Vector.dir/main.cpp.o.d"
-  "CMakeFiles/Vector.dir/src/game.cpp.o"
-  "CMakeFiles/Vector.dir/src/game.cpp.o.d"
-  "CMakeFiles/Vector.dir/src/map.cpp.o"
-  "CMakeFiles/Vector.dir/src/map.cpp.o.d"
-  "CMakeFiles/Vector.dir/src/utils.cpp.o"
-  "CMakeFiles/Vector.dir/src/utils.cpp.o.d"
+  "CMakeFiles/Vector.dir/src/Game.cpp.o"
+  "CMakeFiles/Vector.dir/src/Game.cpp.o.d"
+  "CMakeFiles/Vector.dir/src/GameMap.cpp.o"
+  "CMakeFiles/Vector.dir/src/GameMap.cpp.o.d"
+  "CMakeFiles/Vector.dir/src/Utils.cpp.o"
+  "CMakeFiles/Vector.dir/src/Utils.cpp.o.d"
   "Vector"
   "Vector.pdb"
 )

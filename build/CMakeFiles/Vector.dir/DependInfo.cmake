@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/root/myGame/GameFrame/main.cpp" "CMakeFiles/Vector.dir/main.cpp.o" "gcc" "CMakeFiles/Vector.dir/main.cpp.o.d"
-  "/root/myGame/GameFrame/src/game.cpp" "CMakeFiles/Vector.dir/src/game.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/game.cpp.o.d"
-  "/root/myGame/GameFrame/src/map.cpp" "CMakeFiles/Vector.dir/src/map.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/map.cpp.o.d"
-  "/root/myGame/GameFrame/src/utils.cpp" "CMakeFiles/Vector.dir/src/utils.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/utils.cpp.o.d"
+  "/root/myGame/GameFrame/src/Game.cpp" "CMakeFiles/Vector.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/Game.cpp.o.d"
+  "/root/myGame/GameFrame/src/GameMap.cpp" "CMakeFiles/Vector.dir/src/GameMap.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/GameMap.cpp.o.d"
+  "/root/myGame/GameFrame/src/Utils.cpp" "CMakeFiles/Vector.dir/src/Utils.cpp.o" "gcc" "CMakeFiles/Vector.dir/src/Utils.cpp.o.d"
   )
 
 # Targets to which this target links.

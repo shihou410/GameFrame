@@ -153,77 +153,77 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-src/game.o: src/game.cpp.o
-.PHONY : src/game.o
+src/Game.o: src/Game.cpp.o
+.PHONY : src/Game.o
 
 # target to build an object file
-src/game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/game.cpp.o
-.PHONY : src/game.cpp.o
+src/Game.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.o
+.PHONY : src/Game.cpp.o
 
-src/game.i: src/game.cpp.i
-.PHONY : src/game.i
+src/Game.i: src/Game.cpp.i
+.PHONY : src/Game.i
 
 # target to preprocess a source file
-src/game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/game.cpp.i
-.PHONY : src/game.cpp.i
+src/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.i
+.PHONY : src/Game.cpp.i
 
-src/game.s: src/game.cpp.s
-.PHONY : src/game.s
+src/Game.s: src/Game.cpp.s
+.PHONY : src/Game.s
 
 # target to generate assembly for a file
-src/game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/game.cpp.s
-.PHONY : src/game.cpp.s
+src/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.s
+.PHONY : src/Game.cpp.s
 
-src/map.o: src/map.cpp.o
-.PHONY : src/map.o
+src/GameMap.o: src/GameMap.cpp.o
+.PHONY : src/GameMap.o
 
 # target to build an object file
-src/map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/map.cpp.o
-.PHONY : src/map.cpp.o
+src/GameMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.o
+.PHONY : src/GameMap.cpp.o
 
-src/map.i: src/map.cpp.i
-.PHONY : src/map.i
+src/GameMap.i: src/GameMap.cpp.i
+.PHONY : src/GameMap.i
 
 # target to preprocess a source file
-src/map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/map.cpp.i
-.PHONY : src/map.cpp.i
+src/GameMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.i
+.PHONY : src/GameMap.cpp.i
 
-src/map.s: src/map.cpp.s
-.PHONY : src/map.s
+src/GameMap.s: src/GameMap.cpp.s
+.PHONY : src/GameMap.s
 
 # target to generate assembly for a file
-src/map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/map.cpp.s
-.PHONY : src/map.cpp.s
+src/GameMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.s
+.PHONY : src/GameMap.cpp.s
 
-src/utils.o: src/utils.cpp.o
-.PHONY : src/utils.o
+src/Utils.o: src/Utils.cpp.o
+.PHONY : src/Utils.o
 
 # target to build an object file
-src/utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/utils.cpp.o
-.PHONY : src/utils.cpp.o
+src/Utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.o
+.PHONY : src/Utils.cpp.o
 
-src/utils.i: src/utils.cpp.i
-.PHONY : src/utils.i
+src/Utils.i: src/Utils.cpp.i
+.PHONY : src/Utils.i
 
 # target to preprocess a source file
-src/utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/utils.cpp.i
-.PHONY : src/utils.cpp.i
+src/Utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.i
+.PHONY : src/Utils.cpp.i
 
-src/utils.s: src/utils.cpp.s
-.PHONY : src/utils.s
+src/Utils.s: src/Utils.cpp.s
+.PHONY : src/Utils.s
 
 # target to generate assembly for a file
-src/utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/utils.cpp.s
-.PHONY : src/utils.cpp.s
+src/Utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.s
+.PHONY : src/Utils.cpp.s
 
 # Help Target
 help:
@@ -237,15 +237,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/game.o"
-	@echo "... src/game.i"
-	@echo "... src/game.s"
-	@echo "... src/map.o"
-	@echo "... src/map.i"
-	@echo "... src/map.s"
-	@echo "... src/utils.o"
-	@echo "... src/utils.i"
-	@echo "... src/utils.s"
+	@echo "... src/Game.o"
+	@echo "... src/Game.i"
+	@echo "... src/Game.s"
+	@echo "... src/GameMap.o"
+	@echo "... src/GameMap.i"
+	@echo "... src/GameMap.s"
+	@echo "... src/Utils.o"
+	@echo "... src/Utils.i"
+	@echo "... src/Utils.s"
 .PHONY : help
 
 
