@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/game.cpp.o -c /root/myGame/GameFrame/src/game.cpp",
+  "file": "/root/myGame/GameFrame/src/game.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/map.cpp.o -c /root/myGame/GameFrame/src/map.cpp",
+  "file": "/root/myGame/GameFrame/src/map.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/utils.cpp.o -c /root/myGame/GameFrame/src/utils.cpp",
+  "file": "/root/myGame/GameFrame/src/utils.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/main.cpp.o -c /root/myGame/GameFrame/main.cpp",
+  "file": "/root/myGame/GameFrame/main.cpp"
+}
+]

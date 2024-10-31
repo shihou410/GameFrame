@@ -1,8 +1,7 @@
 #include "../include/Game.h"
 #include "../include/GameMap.h"
 #include "../include/Utils.h"
-#include "SDL_image.h"
-#include "SDL_render.h"
+#include <SDL2/SDL_render.h>
 #include <algorithm>
 #include <cstddef>
 #include <fstream>

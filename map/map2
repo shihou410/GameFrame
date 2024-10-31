@@ -1,6 +1,6 @@
 [config]
 name = map2
-imgSrc  = /root/vector/map/map.png
+imgSrc  = /root/myGame/GameFrame/map/map.png
 tileW = 16
 tileH = 16
 width = 680

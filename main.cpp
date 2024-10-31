@@ -9,9 +9,9 @@ int main(int, char **) {
 
   Game *game = Game::getInstance();
   game->init(WINDOW_WIDTH, WINDOW_HEIGHT);
-  uint map1 = game->createGameMap("/root/vector/map/map1");
-  uint map2 = game->createGameMap("/root/vector/map/map2");
-  uint map3 = game->createGameMap("/root/vector/map/map3");
+  uint map1 = game->createGameMap("/root/myGame/GameFrame/map/map1");
+  uint map2 = game->createGameMap("/root/myGame/GameFrame/map/map2");
+  uint map3 = game->createGameMap("/root/myGame/GameFrame/map/map3");
 
   game->gotoMap(map1);
   game->gameRun();

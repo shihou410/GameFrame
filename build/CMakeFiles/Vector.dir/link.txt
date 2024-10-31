@@ -1,0 +1,1 @@
+/usr/bin/clang++-15 -g CMakeFiles/Vector.dir/src/game.cpp.o CMakeFiles/Vector.dir/src/map.cpp.o CMakeFiles/Vector.dir/src/utils.cpp.o CMakeFiles/Vector.dir/main.cpp.o -o Vector  -lSDL2 -lSDL2_image -lSDL2 -lSDL2_image 

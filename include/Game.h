@@ -1,6 +1,6 @@
 #pragma once
 
-#include "GameMap.h"
+#include "./GameMap.h"
 #include "SDL2/SDL_rect.h"
 #include <iostream>
 #include <vector>

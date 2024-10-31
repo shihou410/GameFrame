@@ -3,10 +3,6 @@
 #include "SDL2/SDL.h"
 #include "SDL2/SDL_image.h"
 #include "SDL2/SDL_render.h"
-#include "SDL_events.h"
-#include "SDL_keycode.h"
-#include "SDL_log.h"
-#include "SDL_timer.h"
 #include <algorithm>
 #include <iostream>
 Game *Game::_ins = nullptr;
@@ -127,8 +123,7 @@ void Game::updateCamera() {
 void Game::updateMap() {
   if (this->lastMap != this->currentMap) {
     if (this->lastMap != this->maps.end()) {
-      // std::cout << "换地图了：" << (*currentMap)->name << std::endl;
-      // (*this->lastMap)->end();
+      (*this->lastMap)->end();
     }
     if (this->currentMap != this->maps.end()) {
       (*this->currentMap)->begin();
