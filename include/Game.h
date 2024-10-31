@@ -22,12 +22,6 @@ class Game {
 
   float FPS = 0.016f;
 
-  Camera camera;
-
-  float shake_leng = 60.f;
-  int shake_magnitude = 6;
-  float shake_remain = 6.f;
-
 public:
   void init(int, int);
   uint loadTexture(const char *);
@@ -45,9 +39,17 @@ public:
   inline SDL_Renderer *getRenderer() const { return this->gRender; }
 
   //------------------相机相关
-  inline Camera &getCamera() { return this->camera; }
+private:
+  Camera camera;
+  float shake_leng;
+  int shake_magnitude;
+  float shake_remain;
+
+  void setCameraShake(float remain = 6.f) { this->shake_remain = remain; };
   void updateCamera();
 
+public:
+  inline Camera &getCamera() { return this->camera; }
   //------------------时间相关
   float startTime;
   float deltaTime;

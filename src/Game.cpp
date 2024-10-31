@@ -14,6 +14,10 @@ Game::Game() : gRender(nullptr), gWindow(nullptr), camera({0, 0, 0, 0}) {
   this->lastTime = 0.0f;
   this->gameTime = 0.0f;
 
+  this->shake_leng = 0.f;
+  this->shake_magnitude = 0;
+  this->shake_remain = 0.f;
+
   this->currentMap = this->maps.end();
   this->lastMap = this->maps.end();
 }
