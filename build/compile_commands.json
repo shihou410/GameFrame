@@ -1,22 +1,62 @@
 [
 {
   "directory": "/root/myGame/GameFrame/build",
-  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/Game.cpp.o -c /root/myGame/GameFrame/src/Game.cpp",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/Animation.cpp.o -c /root/myGame/GameFrame/src/Animation.cpp",
+  "file": "/root/myGame/GameFrame/src/Animation.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/Game.cpp.o -c /root/myGame/GameFrame/src/Game.cpp",
   "file": "/root/myGame/GameFrame/src/Game.cpp"
 },
 {
   "directory": "/root/myGame/GameFrame/build",
-  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/GameMap.cpp.o -c /root/myGame/GameFrame/src/GameMap.cpp",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o -c /root/myGame/GameFrame/src/GameCamera.cpp",
+  "file": "/root/myGame/GameFrame/src/GameCamera.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o -c /root/myGame/GameFrame/src/GameEntity.cpp",
+  "file": "/root/myGame/GameFrame/src/GameEntity.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/GameMap.cpp.o -c /root/myGame/GameFrame/src/GameMap.cpp",
   "file": "/root/myGame/GameFrame/src/GameMap.cpp"
 },
 {
   "directory": "/root/myGame/GameFrame/build",
-  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/src/Utils.cpp.o -c /root/myGame/GameFrame/src/Utils.cpp",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o -c /root/myGame/GameFrame/src/MgrAnima.cpp",
+  "file": "/root/myGame/GameFrame/src/MgrAnima.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o -c /root/myGame/GameFrame/src/MgrEntity.cpp",
+  "file": "/root/myGame/GameFrame/src/MgrEntity.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o -c /root/myGame/GameFrame/src/MgrInput.cpp",
+  "file": "/root/myGame/GameFrame/src/MgrInput.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o -c /root/myGame/GameFrame/src/MgrMap.cpp",
+  "file": "/root/myGame/GameFrame/src/MgrMap.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o -c /root/myGame/GameFrame/src/MgrTex.cpp",
+  "file": "/root/myGame/GameFrame/src/MgrTex.cpp"
+},
+{
+  "directory": "/root/myGame/GameFrame/build",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/src/Utils.cpp.o -c /root/myGame/GameFrame/src/Utils.cpp",
   "file": "/root/myGame/GameFrame/src/Utils.cpp"
 },
 {
   "directory": "/root/myGame/GameFrame/build",
-  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/Vector.dir/main.cpp.o -c /root/myGame/GameFrame/main.cpp",
+  "command": "/usr/bin/clang++-15  -I/root/myGame/GameFrame/include -I/usr/include/SDL2 -g -o CMakeFiles/GameFrame.dir/main.cpp.o -c /root/myGame/GameFrame/main.cpp",
   "file": "/root/myGame/GameFrame/main.cpp"
 }
 ]

@@ -1,19 +1,20 @@
-#include "../include/Game.h"
 #include "../include/GameMap.h"
+#include "../include/Game.h"
+#include "../include/GameCamera.h"
+#include "../include/MgrTex.h"
 #include "../include/Utils.h"
 #include <SDL2/SDL_render.h>
 #include <algorithm>
-#include <cstddef>
 #include <fstream>
 #include <iostream>
 #include <sstream>
 #include <string>
-GameMap::GameMap()
+GameMap::GameMap(int texId)
     : column(0), row(0), width(0), height(0), tilew(0), tileh(0), name(""),
-      imgSrc(), textureId(), scale(1) {}
-GameMap::GameMap(const char *file)
+      textureId(texId), scale(1) {}
+GameMap::GameMap(const char *file, int texId)
     : column(0), row(0), width(0), height(0), tilew(0), tileh(0), name(""),
-      imgSrc(), textureId(), scale(1) {
+      textureId(texId), scale(1) {
   this->load(file);
 }
 
@@ -49,8 +50,6 @@ void GameMap::load(const char *name) {
           this->width = std::stoi(lineArr[1]);
         } else if (Tools::string_strim(lineArr[0]) == "height") {
           this->height = std::stoi(lineArr[1]);
-        } else if (Tools::string_strim(lineArr[0]) == "imgSrc") {
-          this->imgSrc = lineArr[1];
         } else if (Tools::string_strim(lineArr[0]) == "scale") {
           this->scale = std::stoi(lineArr[1]);
         }
@@ -62,6 +61,8 @@ void GameMap::load(const char *name) {
       std::stringstream st(line);
       if (line.empty())
         continue;
+      if (line == "[animation]")
+        break;
       int c = 0;
       while (std::getline(st, s, ',')) {
         this->mapdata.push_back(std::stoi(s));
@@ -75,16 +76,14 @@ void GameMap::load(const char *name) {
   } else {
     std::cout << "打开文件失败：" << name << std::endl;
   }
-
-  this->textureId = Game::getInstance()->loadTexture(this->imgSrc.c_str());
 }
 
 void GameMap::render(SDL_Renderer *render) {
 
   auto game = Game::getInstance();
 
-  SDL_Texture *tex = game->getTextureById(this->textureId);
-  auto camera = game->getCamera();
+  SDL_Texture *tex = game->mgrTex->getTextureById(this->textureId);
+  auto camera = game->camera;
 
   for (int i = 0; i < this->row; i++) {
     for (int j = 0; j < this->column; j++) {
@@ -96,7 +95,7 @@ void GameMap::render(SDL_Renderer *render) {
 
       SDL_Rect srcrect = {tile * (int)this->tilew, 0, (int)this->tilew,
                           (int)this->tileh};
-      SDL_Rect dstrect = {j * tw - camera.x, i * th - camera.y, tw, th};
+      SDL_Rect dstrect = {j * tw - camera->x, i * th - camera->y, tw, th};
       SDL_RenderCopy(render, tex, &srcrect, &dstrect);
     }
   }

@@ -1,16 +1,23 @@
 #pragma once
+#include <map>
 #include <random>
 #include <string>
 #include <vector>
 
-namespace Tools {
+class Tools {
+private:
+  Tools();
 
-/** 字符串分割 */
-std::vector<std::string> string_splice(const std::string str, const char trim);
+  std::map<std::string, std::string> config;
+  std::vector<int> array;
 
-/** 去除字符串首尾的空格 */
-std::string string_strim(std::string str);
+public:
+  /** 字符串分割 */
+  static std::vector<std::string> string_splice(const std::string str,
+                                                const char trim);
 
-int random(int, int);
+  /** 去除字符串首尾的空格 */
+  static std::string string_strim(std::string str);
 
-} // namespace Tools
+  static int random(int, int);
+};

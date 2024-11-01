@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(Vector VERSION 0.1.0 LANGUAGES C CXX)
+project(GameFrame VERSION 0.1.0 LANGUAGES C CXX)
 
 
 
@@ -15,13 +15,13 @@ include_directories(include)
 aux_source_directory(src SOURCE_FILES)
 
 
-add_executable(Vector ${SOURCE_FILES} main.cpp)
+add_executable(GameFrame ${SOURCE_FILES} main.cpp)
 
 
 
 # 添加 SDL2 头文件路径
-target_include_directories(Vector PRIVATE ${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
+target_include_directories(GameFrame PRIVATE ${SDL2_INCLUDE_DIRS} ${SDL2_IMAGE_INCLUDE_DIRS})
 
 # 链接 SDL2 库
-target_link_libraries(Vector ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
+target_link_libraries(GameFrame ${SDL2_LIBRARIES} ${SDL2_IMAGE_LIBRARIES})
 

@@ -1,25 +1,20 @@
 #include "../include/Game.h"
-#include "../include/Utils.h"
+#include "../include/GameCamera.h"
+#include "../include/MgrAnima.h"
+#include "../include/MgrEntity.h"
+#include "../include/MgrInput.h"
+#include "../include/MgrMap.h"
+#include "../include/MgrTex.h"
 #include "SDL2/SDL.h"
-#include "SDL2/SDL_image.h"
 #include "SDL2/SDL_render.h"
-#include <algorithm>
-#include <iostream>
 Game *Game::_ins = nullptr;
 
-Game::Game() : gRender(nullptr), gWindow(nullptr), camera({0, 0, 0, 0}) {
+Game::Game() : gRender(nullptr), gWindow(nullptr) {
 
   this->startTime = 0.0f;
   this->deltaTime = 0.0f;
   this->lastTime = 0.0f;
   this->gameTime = 0.0f;
-
-  this->shake_leng = 0.f;
-  this->shake_magnitude = 0;
-  this->shake_remain = 0.f;
-
-  this->currentMap = this->maps.end();
-  this->lastMap = this->maps.end();
 }
 
 Game *Game::getInstance() {
@@ -46,22 +41,15 @@ void Game::init(int w, int h) {
     return;
   }
 
-  IMG_Init(IMG_INIT_PNG);
-  this->camera.w = w;
-  this->camera.h = h;
+  this->mgrMap = new MgrMap(this);
+  this->mgrTex = new MgrTex(this);
+  this->camera = new GameCamera(this);
+  this->mgrEntity = new MgrEntity(this);
+  this->mgrInput = new MgrInput(this);
+  this->mgrAnima = new MgrAnima(this);
 
   this->startTime = SDL_GetTicks() / 1000.f;
   this->lastTime = this->startTime;
-}
-
-uint Game::loadTexture(const char *name) {
-  SDL_Texture *tex = IMG_LoadTexture(this->gRender, name);
-  if (tex == nullptr) {
-    SDL_Log("图片加载失败: %s", IMG_GetError());
-    return -1;
-  }
-  this->textures.push_back(tex);
-  return this->textures.size() - 1;
 }
 
 void Game::gameRun() {
@@ -83,15 +71,6 @@ void Game::gameRun() {
       if (e.type == SDL_QUIT) {
         this->isExit = true;
       }
-      if (e.type == SDL_KEYDOWN) {
-        this->goNext();
-        if (e.key.keysym.sym == SDLK_a) {
-          this->camera.x -= 10;
-        }
-        if (e.key.keysym.sym == SDLK_d) {
-          this->camera.x += 10;
-        }
-      }
     }
 
     this->gameUpdate();
@@ -105,55 +84,25 @@ void Game::gameRun() {
   }
 }
 
-void Game::gameRender() { this->drawMap(); }
-
-void Game::drawMap() {
-  if (this->currentMap == this->maps.end())
-    return;
-  (*this->currentMap)->render(this->gRender);
+void Game::gameRender() {
+  this->mgrMap->render(this->gRender);
+  this->mgrEntity->draw();
 }
 
 void Game::gameUpdate() {
-  this->updateCamera();
-  this->updateMap();
-}
-void Game::updateCamera() {
-  this->camera.x = Tools::random(-this->shake_remain, this->shake_remain);
-  this->camera.y = Tools::random(-this->shake_remain, this->shake_remain);
-  this->shake_remain = std::max<float>(
-      0, this->shake_remain - (1.f / this->shake_leng) * shake_magnitude);
-}
-
-void Game::updateMap() {
-  if (this->lastMap != this->currentMap) {
-    if (this->lastMap != this->maps.end()) {
-      (*this->lastMap)->end();
-    }
-    if (this->currentMap != this->maps.end()) {
-      (*this->currentMap)->begin();
-    }
-    this->lastMap = this->currentMap;
-  }
-
-  if (this->currentMap != this->maps.end()) {
-    (*this->currentMap)->update();
-  }
+  this->mgrInput->update();
+  this->camera->update();
+  this->mgrAnima->update();
+  this->mgrMap->update();
+  this->mgrEntity->update();
 }
 
 void Game::gameClean() {
 
-  for (auto i = this->maps.begin(); i != this->maps.end();) {
-    (*i)->clear();
-    delete *i;
-    i = this->maps.erase(i);
-  }
-
-  this->maps.clear();
-  for (auto texture : this->textures) {
-    SDL_DestroyTexture(texture);
-  }
-  this->textures.clear();
-
+  this->mgrMap->clear();
+  this->mgrTex->clear();
+  this->mgrEntity->clear();
+  this->mgrAnima->clear();
   SDL_DestroyRenderer(gRender);
   SDL_DestroyWindow(gWindow);
   SDL_Quit();

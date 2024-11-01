@@ -1,22 +1,22 @@
 #pragma once
-#include <cstddef>
 #include <string>
-#include <sys/types.h>
 #include <vector>
 class SDL_Renderer;
 
+class MgrMap;
 class GameMap {
-  std::vector<uint> mapdata;
 
-  uint width, height, tilew, tileh,scale;
-  std::string imgSrc;
+  friend MgrMap;
+
+  std::vector<uint> mapdata;
+  uint width, height, tilew, tileh, scale;
   uint textureId;
 
 public:
   std::string name;
 
-  GameMap();
-  GameMap(const char *);
+  GameMap(int);
+  GameMap(const char *, int);
 
   void load(const char *path);
   void render(SDL_Renderer *);
@@ -25,6 +25,9 @@ public:
   void update();
   void end();
   void clear();
+
+  inline int getMapWidth() const { return this->width; }
+  inline int getMapHeight() const { return this->height; }
 
 private:
   int column;

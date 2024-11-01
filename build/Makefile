@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Vector
+# Target rules for targets named GameFrame
 
 # Build rule for target.
-Vector: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Vector
-.PHONY : Vector
+GameFrame: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 GameFrame
+.PHONY : GameFrame
 
 # fast build rule for target.
-Vector/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/build
-.PHONY : Vector/fast
+GameFrame/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/build
+.PHONY : GameFrame/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -142,7 +142,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -150,15 +150,39 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Animation.o: src/Animation.cpp.o
+.PHONY : src/Animation.o
+
+# target to build an object file
+src/Animation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Animation.cpp.o
+.PHONY : src/Animation.cpp.o
+
+src/Animation.i: src/Animation.cpp.i
+.PHONY : src/Animation.i
+
+# target to preprocess a source file
+src/Animation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Animation.cpp.i
+.PHONY : src/Animation.cpp.i
+
+src/Animation.s: src/Animation.cpp.s
+.PHONY : src/Animation.s
+
+# target to generate assembly for a file
+src/Animation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Animation.cpp.s
+.PHONY : src/Animation.cpp.s
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
 
 # target to build an object file
 src/Game.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Game.cpp.o
 .PHONY : src/Game.cpp.o
 
 src/Game.i: src/Game.cpp.i
@@ -166,7 +190,7 @@ src/Game.i: src/Game.cpp.i
 
 # target to preprocess a source file
 src/Game.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Game.cpp.i
 .PHONY : src/Game.cpp.i
 
 src/Game.s: src/Game.cpp.s
@@ -174,15 +198,63 @@ src/Game.s: src/Game.cpp.s
 
 # target to generate assembly for a file
 src/Game.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Game.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
+
+src/GameCamera.o: src/GameCamera.cpp.o
+.PHONY : src/GameCamera.o
+
+# target to build an object file
+src/GameCamera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o
+.PHONY : src/GameCamera.cpp.o
+
+src/GameCamera.i: src/GameCamera.cpp.i
+.PHONY : src/GameCamera.i
+
+# target to preprocess a source file
+src/GameCamera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameCamera.cpp.i
+.PHONY : src/GameCamera.cpp.i
+
+src/GameCamera.s: src/GameCamera.cpp.s
+.PHONY : src/GameCamera.s
+
+# target to generate assembly for a file
+src/GameCamera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameCamera.cpp.s
+.PHONY : src/GameCamera.cpp.s
+
+src/GameEntity.o: src/GameEntity.cpp.o
+.PHONY : src/GameEntity.o
+
+# target to build an object file
+src/GameEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o
+.PHONY : src/GameEntity.cpp.o
+
+src/GameEntity.i: src/GameEntity.cpp.i
+.PHONY : src/GameEntity.i
+
+# target to preprocess a source file
+src/GameEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameEntity.cpp.i
+.PHONY : src/GameEntity.cpp.i
+
+src/GameEntity.s: src/GameEntity.cpp.s
+.PHONY : src/GameEntity.s
+
+# target to generate assembly for a file
+src/GameEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameEntity.cpp.s
+.PHONY : src/GameEntity.cpp.s
 
 src/GameMap.o: src/GameMap.cpp.o
 .PHONY : src/GameMap.o
 
 # target to build an object file
 src/GameMap.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameMap.cpp.o
 .PHONY : src/GameMap.cpp.o
 
 src/GameMap.i: src/GameMap.cpp.i
@@ -190,7 +262,7 @@ src/GameMap.i: src/GameMap.cpp.i
 
 # target to preprocess a source file
 src/GameMap.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameMap.cpp.i
 .PHONY : src/GameMap.cpp.i
 
 src/GameMap.s: src/GameMap.cpp.s
@@ -198,15 +270,135 @@ src/GameMap.s: src/GameMap.cpp.s
 
 # target to generate assembly for a file
 src/GameMap.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/GameMap.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/GameMap.cpp.s
 .PHONY : src/GameMap.cpp.s
+
+src/MgrAnima.o: src/MgrAnima.cpp.o
+.PHONY : src/MgrAnima.o
+
+# target to build an object file
+src/MgrAnima.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o
+.PHONY : src/MgrAnima.cpp.o
+
+src/MgrAnima.i: src/MgrAnima.cpp.i
+.PHONY : src/MgrAnima.i
+
+# target to preprocess a source file
+src/MgrAnima.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.i
+.PHONY : src/MgrAnima.cpp.i
+
+src/MgrAnima.s: src/MgrAnima.cpp.s
+.PHONY : src/MgrAnima.s
+
+# target to generate assembly for a file
+src/MgrAnima.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.s
+.PHONY : src/MgrAnima.cpp.s
+
+src/MgrEntity.o: src/MgrEntity.cpp.o
+.PHONY : src/MgrEntity.o
+
+# target to build an object file
+src/MgrEntity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o
+.PHONY : src/MgrEntity.cpp.o
+
+src/MgrEntity.i: src/MgrEntity.cpp.i
+.PHONY : src/MgrEntity.i
+
+# target to preprocess a source file
+src/MgrEntity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.i
+.PHONY : src/MgrEntity.cpp.i
+
+src/MgrEntity.s: src/MgrEntity.cpp.s
+.PHONY : src/MgrEntity.s
+
+# target to generate assembly for a file
+src/MgrEntity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.s
+.PHONY : src/MgrEntity.cpp.s
+
+src/MgrInput.o: src/MgrInput.cpp.o
+.PHONY : src/MgrInput.o
+
+# target to build an object file
+src/MgrInput.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o
+.PHONY : src/MgrInput.cpp.o
+
+src/MgrInput.i: src/MgrInput.cpp.i
+.PHONY : src/MgrInput.i
+
+# target to preprocess a source file
+src/MgrInput.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrInput.cpp.i
+.PHONY : src/MgrInput.cpp.i
+
+src/MgrInput.s: src/MgrInput.cpp.s
+.PHONY : src/MgrInput.s
+
+# target to generate assembly for a file
+src/MgrInput.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrInput.cpp.s
+.PHONY : src/MgrInput.cpp.s
+
+src/MgrMap.o: src/MgrMap.cpp.o
+.PHONY : src/MgrMap.o
+
+# target to build an object file
+src/MgrMap.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o
+.PHONY : src/MgrMap.cpp.o
+
+src/MgrMap.i: src/MgrMap.cpp.i
+.PHONY : src/MgrMap.i
+
+# target to preprocess a source file
+src/MgrMap.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrMap.cpp.i
+.PHONY : src/MgrMap.cpp.i
+
+src/MgrMap.s: src/MgrMap.cpp.s
+.PHONY : src/MgrMap.s
+
+# target to generate assembly for a file
+src/MgrMap.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrMap.cpp.s
+.PHONY : src/MgrMap.cpp.s
+
+src/MgrTex.o: src/MgrTex.cpp.o
+.PHONY : src/MgrTex.o
+
+# target to build an object file
+src/MgrTex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o
+.PHONY : src/MgrTex.cpp.o
+
+src/MgrTex.i: src/MgrTex.cpp.i
+.PHONY : src/MgrTex.i
+
+# target to preprocess a source file
+src/MgrTex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrTex.cpp.i
+.PHONY : src/MgrTex.cpp.i
+
+src/MgrTex.s: src/MgrTex.cpp.s
+.PHONY : src/MgrTex.s
+
+# target to generate assembly for a file
+src/MgrTex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrTex.cpp.s
+.PHONY : src/MgrTex.cpp.s
 
 src/Utils.o: src/Utils.cpp.o
 .PHONY : src/Utils.o
 
 # target to build an object file
 src/Utils.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Utils.cpp.o
 .PHONY : src/Utils.cpp.o
 
 src/Utils.i: src/Utils.cpp.i
@@ -214,7 +406,7 @@ src/Utils.i: src/Utils.cpp.i
 
 # target to preprocess a source file
 src/Utils.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Utils.cpp.i
 .PHONY : src/Utils.cpp.i
 
 src/Utils.s: src/Utils.cpp.s
@@ -222,7 +414,7 @@ src/Utils.s: src/Utils.cpp.s
 
 # target to generate assembly for a file
 src/Utils.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Vector.dir/build.make CMakeFiles/Vector.dir/src/Utils.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Utils.cpp.s
 .PHONY : src/Utils.cpp.s
 
 # Help Target
@@ -233,16 +425,40 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Vector"
+	@echo "... GameFrame"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Animation.o"
+	@echo "... src/Animation.i"
+	@echo "... src/Animation.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/GameCamera.o"
+	@echo "... src/GameCamera.i"
+	@echo "... src/GameCamera.s"
+	@echo "... src/GameEntity.o"
+	@echo "... src/GameEntity.i"
+	@echo "... src/GameEntity.s"
 	@echo "... src/GameMap.o"
 	@echo "... src/GameMap.i"
 	@echo "... src/GameMap.s"
+	@echo "... src/MgrAnima.o"
+	@echo "... src/MgrAnima.i"
+	@echo "... src/MgrAnima.s"
+	@echo "... src/MgrEntity.o"
+	@echo "... src/MgrEntity.i"
+	@echo "... src/MgrEntity.s"
+	@echo "... src/MgrInput.o"
+	@echo "... src/MgrInput.i"
+	@echo "... src/MgrInput.s"
+	@echo "... src/MgrMap.o"
+	@echo "... src/MgrMap.i"
+	@echo "... src/MgrMap.s"
+	@echo "... src/MgrTex.o"
+	@echo "... src/MgrTex.i"
+	@echo "... src/MgrTex.s"
 	@echo "... src/Utils.o"
 	@echo "... src/Utils.i"
 	@echo "... src/Utils.s"
