@@ -14,6 +14,7 @@ public:
   vec2 pos;
 
 private:
+  int id;
   bool lastState;
   bool active;
   GameEntity();
@@ -24,4 +25,9 @@ private:
   void update();
   void draw();
   void destroy();
+
+public:
+  inline int getId() const { return this->id; }
+  inline int getAnimaId() const { return this->animaId; }
+  inline void setAnimaId(int value) { this->animaId = value; }
 };

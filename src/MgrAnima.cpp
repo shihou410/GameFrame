@@ -2,60 +2,79 @@
 #include "../include/Animation.h"
 #include "../include/Game.h"
 #include <iostream>
-MgrAnima::MgrAnima(Game *game) { this->game = game; }
+MgrAnima::MgrAnima(Game *game) : starId(0) { this->game = game; }
 
-int MgrAnima::addAnima(int texId, const int *frames, int len, float interval,
-                       int w, int h) {
-  auto ani = new Animation();
-  this->animas.push_back(ani);
-  ani->id = texId;
+int MgrAnima::addAnima(int texId, std::vector<int> frames, int w, int h,
+                       float interval) {
+  auto anima = new Animation();
+  anima->id = this->starId;
+  anima->texId = texId;
+  int len = frames.size();
   for (int i = 0; i < len; i++) {
-    ani->addFrame(frames[i]);
+    anima->addFrame(frames[i]);
   }
-  ani->width = w;
-  ani->height = h;
-  ani->interval = interval;
-  return this->animas.size() - 1;
+  anima->width = w;
+  anima->height = h;
+  anima->interval = interval;
+  this->animas[this->starId] = anima;
+  this->starId++;
+  return anima->id;
 }
 
 void MgrAnima::update() {
-  for (auto i : this->animas)
-    i->update();
+  for (auto item : this->animas) {
+    item.second->update();
+  }
 }
-void MgrAnima::playAnima(int index, bool loop) {
-  if (index >= this->animas.size())
+void MgrAnima::playAnima(int id, bool loop) {
+  if (this->animas.count(id) <= 0)
     return;
-  auto anima = this->animas[index];
+  auto anima = this->animas[id];
   anima->isLoop = loop;
   anima->start();
 }
-void MgrAnima::stopAnima(int index) {
-  if (index >= this->animas.size())
+void MgrAnima::stopAnima(int id) {
+  if (this->animas.count(id) <= 0)
     return;
-  auto anima = this->animas[index];
+  auto anima = this->animas[id];
   anima->stop();
 }
-bool MgrAnima::animaCompolate(int index) {
-  if (index >= this->animas.size())
+bool MgrAnima::animaCompolate(int id) {
+  if (this->animas.count(id) <= 0)
     return false;
-  auto anima = this->animas[index];
-  return true;
+  auto anima = this->animas[id];
+
+  return anima->currentFrame == anima->frames.end() - 1;
 }
-bool MgrAnima::atFrame(int index, int frame) {
-  if (index >= this->animas.size())
+bool MgrAnima::atFrame(int id, int frame) {
+  if (this->animas.count(id) <= 0)
     return false;
-  auto anima = this->animas[index];
+  auto anima = this->animas[id];
   return anima->currentFrame == anima->frames.begin() + frame;
 }
-Animation *MgrAnima::getAnima(int index) { return this->animas[index]; }
+Animation *MgrAnima::getAnima(int id) {
+  if (this->animas.count(id) <= 0)
+    return nullptr;
 
-SDL_Texture *MgrAnima::getTexture(int aid) {
-  return this->animas[aid]->getTexture();
+  return this->animas[id];
 }
 
+SDL_Texture *MgrAnima::getTexture(int id) {
+  if (this->animas.count(id) <= 0)
+    return nullptr;
+  return this->animas[id]->getTexture();
+}
+void MgrAnima::removeAnima(int id) {
+  if (this->animas.count(id) <= 0)
+    return;
+
+  delete this->animas[id];
+  this->animas.erase(id);
+}
 void MgrAnima::clear() {
-  for (auto i = this->animas.begin(); i != this->animas.end();) {
-    delete *i;
-    i = this->animas.erase(i);
+  for (auto item = this->animas.begin(); item != this->animas.end();) {
+    delete item->second;
+    item = this->animas.erase(item);
   }
+  this->animas.clear();
 }

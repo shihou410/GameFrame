@@ -1,75 +1,90 @@
 #include "../include/MgrEntity.h"
 #include "../include/GameEntity.h"
-MgrEntity::MgrEntity(Game *game) { this->game = game; }
+#include <algorithm>
+MgrEntity::MgrEntity(Game *game) : starId(0) { this->game = game; }
 
 void MgrEntity::update() {
-  for (auto e : this->entitys) {
-    if (e->active) {
-      e->update();
-    }
 
-    if (e->lastState != e->active) {
-      if (e->active) {
-        e->enter();
-      } else {
-        e->destroy();
-      }
-      e->lastState = e->active;
+  for (auto &item : this->awaitEntitys) {
+    item->active = true;
+    item->enter();
+    this->activeEntitys[item->id] = item;
+  }
+  this->awaitEntitys.clear();
+  for (auto item = this->activeEntitys.begin();
+       item != this->activeEntitys.end();) {
+    auto entity = item->second;
+
+    if (entity->active) {
+      entity->update();
+      item++;
+    } else {
+      entity->destroy();
+      this->awaitEntitys.push_back(item->second);
+      item = this->activeEntitys.erase(item);
     }
   }
 }
+
 void MgrEntity::draw() {
-  for (auto e : this->entitys) {
-    if (e->active)
-      e->draw();
+  for (auto item : this->activeEntitys) {
+    auto entity = item.second;
+    if (entity->active)
+      entity->draw();
   }
 }
 
 int MgrEntity::createEntity(int animaId, int x, int y, int w, int h) {
 
-  GameEntity *e = nullptr;
-  int index = -1;
+  GameEntity *entity = nullptr;
+  if (this->entityPool.empty()) {
+    entity = new GameEntity();
+  } else {
+    entity = this->entityPool.back();
+    this->entityPool.pop_back();
+  }
 
-  for (size_t i = 0; i < this->entitys.size(); ++i) {
-    if (!this->entitys[i]->active) {
-      e = this->entitys[i];
-      index = i;
-      break;
+  entity->id = this->starId;
+  entity->animaId = animaId;
+  entity->pos[0] = x;
+  entity->pos[1] = y;
+  entity->halfSize[0] = w / 2.f;
+  entity->halfSize[1] = h / 2.f;
+  entity->active = true;
+
+  this->awaitEntitys.push_back(entity);
+
+  this->starId++;
+  return entity->id;
+}
+
+GameEntity *MgrEntity::getEntity(int id) {
+  if (this->activeEntitys.count(id) > 0)
+    return this->activeEntitys[id];
+
+  for (auto item : this->awaitEntitys) {
+    if (item->id == id) {
+      return item;
     }
   }
 
-  if (!e) {
-    e = new GameEntity();
-    this->entitys.push_back(e);
-    index = this->entitys.size() - 1;
-  }
-
-  e->animaId = animaId;
-  e->pos[0] = x;
-  e->pos[1] = y;
-  e->halfSize[0] = w / 2.f;
-  e->halfSize[1] = h / 2.f;
-  e->active = true;
-
-  return index;
+  return nullptr;
 }
 
-GameEntity *MgrEntity::getEntity(int index) {
-  if (index >= this->entitys.size())
-    return nullptr;
-  return *(this->entitys.begin() + index);
-}
-
-void MgrEntity::destroyEntity(int index) {
-  if (index >= this->entitys.size())
+void MgrEntity::destroyEntity(int id) {
+  if (this->activeEntitys.count(id) <= 0)
     return;
-  auto e = this->entitys[index];
-  e->active = false;
+  this->activeEntitys[id]->active = false;
 }
 
 void MgrEntity::clear() {
-  for (auto e = this->entitys.begin(); e != this->entitys.end();) {
-    delete *e;
-    e = this->entitys.erase(e);
+  for (auto item : this->activeEntitys) {
+    delete item.second;
   }
+  for (auto item = this->entityPool.begin(); item != this->entityPool.end();) {
+    delete *item;
+    item = this->entityPool.erase(item);
+  }
+  this->activeEntitys.clear();
+  this->entityPool.clear();
 }

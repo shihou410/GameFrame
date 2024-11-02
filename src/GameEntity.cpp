@@ -6,9 +6,10 @@
 #include "../include/linmath.h"
 #include "SDL2/SDL_rect.h"
 #include "SDL2/SDL_render.h"
+#include <iostream>
 
 GameEntity::GameEntity()
-    : active(false), lastState(false), pos(), halfSize(), animaId(-1) {}
+    : active(false), lastState(false), pos(), halfSize(), animaId(-1), id(-1) {}
 
 void GameEntity::enter() {
   if (this->onEnter) {
@@ -22,7 +23,9 @@ void GameEntity::update() {
 }
 void GameEntity::draw() {
   Game *game = Game::getInstance();
-  if (this->animaId < 0) {
+  auto anima = game->mgrAnima->getAnima(this->animaId);
+
+  if (!anima) {
     SDL_SetRenderDrawColor(game->getRenderer(), 255, 0, 0, 255);
     vec2 min;
     vec2_sub(min, this->pos, this->halfSize);
@@ -32,7 +35,6 @@ void GameEntity::draw() {
     SDL_RenderFillRectF(game->getRenderer(), &rect);
   } else {
     auto texture = game->mgrAnima->getTexture(this->animaId);
-    auto anima = game->mgrAnima->getAnima(this->animaId);
     int width = anima->getWidth();
     int height = anima->getHeight();
 
@@ -51,6 +53,10 @@ void GameEntity::draw() {
   }
 }
 void GameEntity::destroy() {
+  this->id = -1;
+  Game *game = Game::getInstance();
+  game->mgrAnima->stopAnima(this->animaId);
+  this->animaId = -1;
   if (this->onDestroy) {
     this->onDestroy(this);
   }

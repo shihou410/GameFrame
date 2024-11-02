@@ -39,7 +39,7 @@ void MgrMap::clear() {
   this->maps.clear();
 }
 
-int MgrMap::loadMap(const char *file, int texId) {
+int MgrMap::loadMap(const std::string &file, int texId) {
   GameMap *map = new GameMap(texId);
   map->load(file);
   this->addGameMap(map);

@@ -6,8 +6,8 @@
 
 MgrTex::MgrTex(Game *game) { this->game = game; }
 void MgrTex::init() { IMG_Init(IMG_INIT_PNG); }
-int MgrTex::loadTexture(const char *file) {
-  auto tex = IMG_LoadTexture(this->game->getRenderer(), file);
+int MgrTex::loadTexture(const std::string &file) {
+  auto tex = IMG_LoadTexture(this->game->getRenderer(), file.c_str());
   if (tex == nullptr) {
     std::cout << "图片加载失败：" << IMG_GetError() << std::endl;
     return -1;

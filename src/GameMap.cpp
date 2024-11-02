@@ -12,13 +12,13 @@
 GameMap::GameMap(int texId)
     : column(0), row(0), width(0), height(0), tilew(0), tileh(0), name(""),
       textureId(texId), scale(1) {}
-GameMap::GameMap(const char *file, int texId)
+GameMap::GameMap(const std::string &file, int texId)
     : column(0), row(0), width(0), height(0), tilew(0), tileh(0), name(""),
       textureId(texId), scale(1) {
   this->load(file);
 }
 
-void GameMap::load(const char *name) {
+void GameMap::load(const std::string &name) {
 
   std::fstream file(name);
   if (file.is_open()) {

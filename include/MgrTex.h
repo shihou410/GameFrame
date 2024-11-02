@@ -1,4 +1,5 @@
 
+#include <string>
 #include <vector>
 class Game;
 class SDL_Texture;
@@ -14,7 +15,8 @@ private:
   MgrTex(Game *);
   void init();
   void clear();
+
 public:
-  int loadTexture(const char *);
+  int loadTexture(const std::string &);
   SDL_Texture *getTextureById(int id);
 };

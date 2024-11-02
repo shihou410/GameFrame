@@ -3,8 +3,8 @@
 #include "../include/MgrTex.h"
 
 Animation::Animation()
-    : id(-1), interval(0.f), isLoop(false), isStop(true), passTime(0.f),
-      width(0), height(0) {
+    : id(-1), texId(0), interval(0.f), isLoop(false), isStop(true),
+      passTime(0.f), width(0), height(0) {
   this->currentFrame = this->frames.end();
 }
 
@@ -33,6 +33,6 @@ void Animation::update() {
 
 SDL_Texture *Animation::getTexture() {
   Game *game = Game::getInstance();
-  auto texture = game->mgrTex->getTextureById(this->id);
+  auto texture = game->mgrTex->getTextureById(this->texId);
   return texture;
 }

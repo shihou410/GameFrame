@@ -9,6 +9,8 @@ private:
   std::vector<int>::iterator currentFrame;
 
   int id;
+  int texId;
+
   float interval;
   bool isLoop;
   bool isStop;
@@ -32,9 +34,7 @@ public:
   }
   inline void stop() { this->isStop = true; };
   inline int getSize() const { return this->frames.size(); }
-  inline int getCurrentFrame() const {
-    return this->currentFrame - this->frames.begin();
-  }
+  inline int getCurrentFrame() const { return *this->currentFrame; }
   inline int getWidth() const { return this->width; }
   inline int getHeight() const { return this->height; }
   SDL_Texture *getTexture();

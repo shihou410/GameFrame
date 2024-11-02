@@ -105,15 +105,21 @@ CMakeFiles/GameFrame.dir/main.cpp.o: ../../../main.cpp \
   /usr/include/c++/11/bits/std_function.h \
   /usr/include/c++/11/typeinfo \
   ../../../include/MgrAnima.h \
-  /usr/include/c++/11/vector \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
   /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
@@ -152,15 +158,6 @@ CMakeFiles/GameFrame.dir/main.cpp.o: ../../../main.cpp \
   /usr/include/SDL2/begin_code.h \
   /usr/include/SDL2/close_code.h \
   ../../../include/MgrMap.h \
-  ../../../include/MgrTex.h \
-  ../../../include/Utils.h \
-  /usr/include/c++/11/map \
-  /usr/include/c++/11/bits/stl_tree.h \
-  /usr/include/c++/11/ext/aligned_buffer.h \
-  /usr/include/c++/11/bits/stl_map.h \
-  /usr/include/c++/11/bits/stl_multimap.h \
-  /usr/include/c++/11/bits/erase_if.h \
-  /usr/include/c++/11/random \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/stringfwd.h \
   /usr/include/c++/11/bits/char_traits.h \
@@ -207,6 +204,9 @@ CMakeFiles/GameFrame.dir/main.cpp.o: ../../../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/basic_string.tcc \
+  ../../../include/MgrTex.h \
+  ../../../include/Utils.h \
+  /usr/include/c++/11/random \
   /usr/include/c++/11/limits \
   /usr/include/c++/11/bits/random.h \
   /usr/include/c++/11/bits/uniform_int_dist.h \
@@ -215,6 +215,11 @@ CMakeFiles/GameFrame.dir/main.cpp.o: ../../../main.cpp \
   /usr/include/c++/11/numeric \
   /usr/include/c++/11/bits/stl_numeric.h \
   /usr/include/c++/11/bit \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
@@ -294,13 +299,119 @@ CMakeFiles/GameFrame.dir/src/Animation.cpp.o: ../../../src/Animation.cpp \
   /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/Game.h \
-  ../../../include/MgrTex.h
+  ../../../include/MgrTex.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc
 
 CMakeFiles/GameFrame.dir/src/Game.cpp.o: ../../../src/Game.cpp \
   ../../../include/Game.h \
   ../../../include/GameCamera.h \
   ../../../include/MgrAnima.h \
-  /usr/include/c++/11/vector \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -336,16 +447,29 @@ CMakeFiles/GameFrame.dir/src/Game.cpp.o: ../../../src/Game.cpp \
   /usr/include/c++/11/new \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/MgrEntity.h \
   ../../../include/MgrInput.h \
@@ -434,6 +558,52 @@ CMakeFiles/GameFrame.dir/src/Game.cpp.o: ../../../src/Game.cpp \
   /usr/include/SDL2/begin_code.h \
   /usr/include/SDL2/close_code.h \
   ../../../include/MgrMap.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/c++/11/cstdint \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
   ../../../include/MgrTex.h \
   /usr/include/SDL2/SDL.h \
   /usr/include/SDL2/SDL_main.h \
@@ -874,7 +1044,78 @@ CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: ../../../src/GameEntity.cpp \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/Game.h \
   ../../../include/MgrAnima.h \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
   ../../../include/MgrTex.h \
+  /usr/include/c++/11/string \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
   ../../../include/linmath.h \
   /usr/include/SDL2/SDL_rect.h \
   /usr/include/SDL2/SDL_stdinc.h \
@@ -883,29 +1124,10 @@ CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: ../../../src/GameEntity.cpp \
   /usr/include/x86_64-linux-gnu/SDL2/SDL_platform.h \
   /usr/include/x86_64-linux-gnu/SDL2/begin_code.h \
   /usr/include/x86_64-linux-gnu/SDL2/close_code.h \
-  /usr/include/stdio.h \
-  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/cstdlib \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/inttypes.h \
   /usr/include/inttypes.h \
-  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/ctype.h \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/float.h \
   /usr/include/SDL2/begin_code.h \
   /usr/include/SDL2/close_code.h \
@@ -916,7 +1138,35 @@ CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: ../../../src/GameEntity.cpp \
   /usr/include/SDL2/SDL_render.h \
   /usr/include/SDL2/SDL_video.h \
   /usr/include/SDL2/SDL_surface.h \
-  /usr/include/SDL2/SDL_blendmode.h
+  /usr/include/SDL2/SDL_blendmode.h \
+  /usr/include/c++/11/iostream \
+  /usr/include/c++/11/ostream \
+  /usr/include/c++/11/ios \
+  /usr/include/c++/11/exception \
+  /usr/include/c++/11/bits/exception_ptr.h \
+  /usr/include/c++/11/bits/cxxabi_init_exception.h \
+  /usr/include/c++/11/bits/nested_exception.h \
+  /usr/include/c++/11/bits/ios_base.h \
+  /usr/include/c++/11/bits/locale_classes.h \
+  /usr/include/c++/11/bits/locale_classes.tcc \
+  /usr/include/c++/11/system_error \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
+  /usr/include/c++/11/stdexcept \
+  /usr/include/c++/11/streambuf \
+  /usr/include/c++/11/bits/streambuf.tcc \
+  /usr/include/c++/11/bits/basic_ios.h \
+  /usr/include/c++/11/bits/locale_facets.h \
+  /usr/include/c++/11/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_base.h \
+  /usr/include/c++/11/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h \
+  /usr/include/c++/11/bits/locale_facets.tcc \
+  /usr/include/c++/11/bits/basic_ios.tcc \
+  /usr/include/c++/11/bits/ostream.tcc \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc
 
 CMakeFiles/GameFrame.dir/src/GameMap.cpp.o: ../../../src/GameMap.cpp \
   ../../../include/GameMap.h \
@@ -1177,7 +1427,8 @@ CMakeFiles/GameFrame.dir/src/GameMap.cpp.o: ../../../src/GameMap.cpp \
 
 CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: ../../../src/MgrAnima.cpp \
   ../../../include/MgrAnima.h \
-  /usr/include/c++/11/vector \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1213,16 +1464,29 @@ CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: ../../../src/MgrAnima.cpp \
   /usr/include/c++/11/new \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/Animation.h \
   ../../../include/Game.h \
@@ -1307,8 +1571,6 @@ CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: ../../../src/MgrAnima.cpp \
   /usr/include/c++/11/string \
   /usr/include/c++/11/bits/ostream_insert.h \
   /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdlib \
@@ -1364,7 +1626,8 @@ CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: ../../../src/MgrAnima.cpp \
 
 CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: ../../../src/MgrEntity.cpp \
   ../../../include/MgrEntity.h \
-  /usr/include/c++/11/vector \
+  /usr/include/c++/11/map \
+  /usr/include/c++/11/bits/stl_tree.h \
   /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -1400,16 +1663,29 @@ CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: ../../../src/MgrEntity.cpp \
   /usr/include/c++/11/new \
   /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/ext/aligned_buffer.h \
+  /usr/include/c++/11/bits/stl_map.h \
   /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/tuple \
+  /usr/include/c++/11/utility \
+  /usr/include/c++/11/bits/stl_relops.h \
+  /usr/include/c++/11/array \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/uses_allocator.h \
+  /usr/include/c++/11/bits/invoke.h \
+  /usr/include/c++/11/bits/stl_multimap.h \
+  /usr/include/c++/11/bits/erase_if.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
   /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/range_access.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/GameEntity.h \
   ../../../include/linmath.h \
@@ -1466,17 +1742,16 @@ CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: ../../../src/MgrEntity.cpp \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/11/functional \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/tuple \
-  /usr/include/c++/11/utility \
-  /usr/include/c++/11/bits/stl_relops.h \
-  /usr/include/c++/11/array \
-  /usr/include/c++/11/bits/uses_allocator.h \
-  /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/bits/refwrap.h \
   /usr/include/c++/11/bits/std_function.h \
-  /usr/include/c++/11/typeinfo
+  /usr/include/c++/11/typeinfo \
+  /usr/include/c++/11/algorithm \
+  /usr/include/c++/11/bits/stl_algo.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/c++/11/bits/algorithmfwd.h \
+  /usr/include/c++/11/bits/stl_heap.h \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/uniform_int_dist.h
 
 CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o: ../../../src/MgrInput.cpp \
   ../../../include/MgrInput.h \
@@ -1592,8 +1867,7 @@ CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o: ../../../src/MgrInput.cpp \
 
 CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   ../../../include/MgrMap.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -1606,6 +1880,10 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -1622,27 +1900,6 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
-  /usr/include/c++/11/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
-  /usr/include/c++/11/ext/new_allocator.h \
-  /usr/include/c++/11/new \
-  /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/ext/alloc_traits.h \
-  /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/functional_hash.h \
-  /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/range_access.h \
-  /usr/include/c++/11/bits/vector.tcc \
-  ../../../include/GameMap.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/char_traits.h \
   /usr/include/c++/11/bits/postypes.h \
   /usr/include/c++/11/cwchar \
   /usr/include/wchar.h \
@@ -1667,6 +1924,11 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/c++/11/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
+  /usr/include/c++/11/ext/new_allocator.h \
+  /usr/include/c++/11/new \
+  /usr/include/c++/11/bits/exception.h \
   /usr/include/c++/11/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
   /usr/include/c++/11/clocale \
@@ -1681,6 +1943,8 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/c++/11/bits/cxxabi_forced.h \
   /usr/include/c++/11/bits/stl_function.h \
   /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
   /usr/include/c++/11/bits/basic_string.h \
   /usr/include/c++/11/ext/atomicity.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
@@ -1713,6 +1977,9 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/11/ext/alloc_traits.h \
+  /usr/include/c++/11/bits/alloc_traits.h \
+  /usr/include/c++/11/bits/stl_construct.h \
   /usr/include/c++/11/ext/string_conversions.h \
   /usr/include/c++/11/cstdlib \
   /usr/include/stdlib.h \
@@ -1744,12 +2011,19 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc
+  /usr/include/c++/11/bits/functional_hash.h \
+  /usr/include/c++/11/bits/hash_bytes.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
+  ../../../include/GameMap.h
 
 CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp \
   ../../../include/MgrTex.h \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_algobase.h \
+  /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
   /usr/include/features.h \
@@ -1762,6 +2036,10 @@ CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp \
   /usr/include/x86_64-linux-gnu/gnu/stubs.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
+  /usr/include/c++/11/bits/stringfwd.h \
+  /usr/include/c++/11/bits/memoryfwd.h \
+  /usr/include/c++/11/bits/char_traits.h \
+  /usr/include/c++/11/bits/stl_algobase.h \
   /usr/include/c++/11/bits/functexcept.h \
   /usr/include/c++/11/bits/exception_defines.h \
   /usr/include/c++/11/bits/cpp_type_traits.h \
@@ -1778,22 +2056,124 @@ CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp \
   /usr/include/c++/11/bits/ptr_traits.h \
   /usr/include/c++/11/debug/debug.h \
   /usr/include/c++/11/bits/predefined_ops.h \
+  /usr/include/c++/11/bits/postypes.h \
+  /usr/include/c++/11/cwchar \
+  /usr/include/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/11/cstdint \
+  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
   /usr/include/c++/11/bits/allocator.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++allocator.h \
   /usr/include/c++/11/ext/new_allocator.h \
   /usr/include/c++/11/new \
   /usr/include/c++/11/bits/exception.h \
-  /usr/include/c++/11/bits/memoryfwd.h \
-  /usr/include/c++/11/bits/stl_construct.h \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/localefwd.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
+  /usr/include/c++/11/clocale \
+  /usr/include/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/c++/11/iosfwd \
+  /usr/include/c++/11/cctype \
+  /usr/include/ctype.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/11/bits/ostream_insert.h \
+  /usr/include/c++/11/bits/cxxabi_forced.h \
+  /usr/include/c++/11/bits/stl_function.h \
+  /usr/include/c++/11/backward/binders.h \
+  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/initializer_list \
+  /usr/include/c++/11/bits/basic_string.h \
+  /usr/include/c++/11/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/ext/alloc_traits.h \
   /usr/include/c++/11/bits/alloc_traits.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/initializer_list \
-  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/stl_construct.h \
+  /usr/include/c++/11/ext/string_conversions.h \
+  /usr/include/c++/11/cstdlib \
+  /usr/include/stdlib.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/include/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/c++/11/bits/std_abs.h \
+  /usr/include/c++/11/cstdio \
+  /usr/include/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/c++/11/cerrno \
+  /usr/include/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/linux/errno.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/c++/11/bits/charconv.h \
   /usr/include/c++/11/bits/functional_hash.h \
   /usr/include/c++/11/bits/hash_bytes.h \
-  /usr/include/c++/11/bits/range_access.h \
+  /usr/include/c++/11/bits/basic_string.tcc \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
   /usr/include/c++/11/bits/vector.tcc \
   ../../../include/Game.h \
   /usr/include/SDL2/SDL_image.h \
@@ -1805,69 +2185,12 @@ CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp \
   /usr/include/x86_64-linux-gnu/SDL2/SDL_platform.h \
   /usr/include/x86_64-linux-gnu/SDL2/begin_code.h \
   /usr/include/x86_64-linux-gnu/SDL2/close_code.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/lib/llvm-15/lib/clang/15.0.7/include/stddef.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/stdio.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
   /usr/include/c++/11/stdlib.h \
-  /usr/include/c++/11/cstdlib \
-  /usr/include/stdlib.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/c++/11/bits/std_abs.h \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/__stddef_max_align_t.h \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /usr/include/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
   /usr/lib/llvm-15/lib/clang/15.0.7/include/inttypes.h \
   /usr/include/inttypes.h \
-  /usr/lib/llvm-15/lib/clang/15.0.7/include/stdint.h \
-  /usr/include/stdint.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/ctype.h \
   /usr/include/c++/11/math.h \
   /usr/include/c++/11/cmath \
   /usr/include/math.h \
@@ -2009,61 +2332,13 @@ CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp \
   /usr/include/c++/11/iostream \
   /usr/include/c++/11/ostream \
   /usr/include/c++/11/ios \
-  /usr/include/c++/11/iosfwd \
-  /usr/include/c++/11/bits/stringfwd.h \
-  /usr/include/c++/11/bits/postypes.h \
-  /usr/include/c++/11/cwchar \
   /usr/include/c++/11/exception \
   /usr/include/c++/11/bits/exception_ptr.h \
   /usr/include/c++/11/bits/cxxabi_init_exception.h \
   /usr/include/c++/11/typeinfo \
   /usr/include/c++/11/bits/nested_exception.h \
-  /usr/include/c++/11/bits/char_traits.h \
-  /usr/include/c++/11/cstdint \
-  /usr/include/c++/11/bits/localefwd.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/c++locale.h \
-  /usr/include/c++/11/clocale \
-  /usr/include/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/11/cctype \
   /usr/include/c++/11/bits/ios_base.h \
-  /usr/include/c++/11/ext/atomicity.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/c++/11/bits/locale_classes.h \
-  /usr/include/c++/11/string \
-  /usr/include/c++/11/bits/ostream_insert.h \
-  /usr/include/c++/11/bits/cxxabi_forced.h \
-  /usr/include/c++/11/bits/stl_function.h \
-  /usr/include/c++/11/backward/binders.h \
-  /usr/include/c++/11/bits/basic_string.h \
-  /usr/include/c++/11/ext/string_conversions.h \
-  /usr/include/c++/11/cstdio \
-  /usr/include/c++/11/cerrno \
-  /usr/include/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/linux/errno.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/c++/11/bits/charconv.h \
-  /usr/include/c++/11/bits/basic_string.tcc \
   /usr/include/c++/11/bits/locale_classes.tcc \
   /usr/include/c++/11/system_error \
   /usr/include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
@@ -2319,12 +2594,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 ../../../src/GameEntity.cpp:
 
-/usr/include/c++/11/bits/algorithmfwd.h:
-
-/usr/include/c++/11/bits/stl_algo.h:
-
-/usr/include/c++/11/algorithm:
-
 ../../../include/GameMap.h:
 
 /usr/include/SDL2/SDL_locale.h:
@@ -2471,11 +2740,41 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/SDL2/SDL_clipboard.h:
 
-/usr/include/c++/11/string:
+/usr/include/SDL2/SDL_thread.h:
+
+../../../src/GameCamera.cpp:
+
+/usr/include/SDL2/SDL_mutex.h:
+
+/usr/include/SDL2/SDL_endian.h:
+
+/usr/include/SDL2/SDL_error.h:
+
+/usr/lib/llvm-15/lib/clang/15.0.7/include/xsavecintrin.h:
+
+/usr/include/c++/11/bits/stl_multimap.h:
+
+/usr/lib/llvm-15/lib/clang/15.0.7/include/pmmintrin.h:
+
+/usr/include/features.h:
+
+/usr/include/c++/11/bits/stl_construct.h:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 
-/usr/include/c++/11/bits/stl_construct.h:
+/usr/lib/llvm-15/lib/clang/15.0.7/include/avx512ifmavlintrin.h:
+
+/usr/include/SDL2/SDL_rwops.h:
+
+/usr/include/c++/11/bits/stringfwd.h:
+
+../../../src/Utils.cpp:
+
+/usr/lib/llvm-15/lib/clang/15.0.7/include/rdseedintrin.h:
+
+/usr/include/c++/11/bits/stl_tree.h:
+
+/usr/include/c++/11/tuple:
 
 /usr/include/c++/11/bits/functional_hash.h:
 
@@ -2491,13 +2790,7 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/c++/11/backward/binders.h:
 
-/usr/include/c++/11/tuple:
-
-../../../src/Utils.cpp:
-
-/usr/lib/llvm-15/lib/clang/15.0.7/include/rdseedintrin.h:
-
-/usr/include/c++/11/bits/stl_tree.h:
+/usr/include/c++/11/algorithm:
 
 /usr/lib/llvm-15/lib/clang/15.0.7/include/smmintrin.h:
 
@@ -2530,12 +2823,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/c++/11/bits/char_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
-
-/usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h:
-
-/usr/include/x86_64-linux-gnu/SDL2/begin_code.h:
-
-/usr/include/SDL2/close_code.h:
 
 /usr/include/alloca.h:
 
@@ -2599,15 +2886,7 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/c++/11/bits/stl_map.h:
 
-/usr/lib/llvm-15/lib/clang/15.0.7/include/fxsrintrin.h:
-
-/usr/include/stdio.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/c++/11/bits/stl_heap.h:
-
-/usr/include/c++/11/bits/std_abs.h:
 
 /usr/include/c++/11/bits/vector.tcc:
 
@@ -2634,10 +2913,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/c++/11/cmath:
 
 /usr/include/c++/11/bits/allocator.h:
-
-/usr/include/c++/11/bits/stl_tempbuf.h:
-
-/usr/include/c++/11/bits/std_function.h:
 
 /usr/include/c++/11/type_traits:
 
@@ -2689,16 +2964,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/errno.h:
 
-/usr/lib/llvm-15/lib/clang/15.0.7/include/pmmintrin.h:
-
-/usr/include/features.h:
-
-/usr/lib/llvm-15/lib/clang/15.0.7/include/xsavecintrin.h:
-
-/usr/include/c++/11/bits/stl_multimap.h:
-
-/usr/include/x86_64-linux-gnu/SDL2/close_code.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /usr/lib/llvm-15/lib/clang/15.0.7/include/avx512vpopcntdqintrin.h:
@@ -2722,8 +2987,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/c++/11/bits/ios_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/c++/11/debug/debug.h:
 
@@ -2769,9 +3032,7 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
-../../../src/GameCamera.cpp:
-
-/usr/include/SDL2/SDL_mutex.h:
+/usr/include/c++/11/bits/stl_algo.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -2807,8 +3068,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/c++/11/bits/random.h:
 
-/usr/include/SDL2/SDL_thread.h:
-
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/c++/11/bits/codecvt.h:
@@ -2843,21 +3102,37 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/c++/11/bits/postypes.h:
 
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
 
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/c++/11/ext/aligned_buffer.h:
-
 /usr/include/SDL2/SDL_gamecontroller.h:
 
 /usr/lib/llvm-15/lib/clang/15.0.7/include/lzcntintrin.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
+
+/usr/include/x86_64-linux-gnu/SDL2/begin_code.h:
+
+/usr/include/SDL2/close_code.h:
+
+/usr/include/x86_64-linux-gnu/SDL2/close_code.h:
+
+/usr/lib/llvm-15/lib/clang/15.0.7/include/fxsrintrin.h:
+
+/usr/include/stdio.h:
+
+/usr/lib/llvm-15/lib/clang/15.0.7/include/stdarg.h:
+
+/usr/include/c++/11/string:
 
 /usr/include/c++/11/typeinfo:
 
@@ -2866,6 +3141,10 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/math.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/c++/11/bits/std_function.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -2893,6 +3172,14 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/inttypes.h:
 
+/usr/include/c++/11/bits/ptr_traits.h:
+
+/usr/include/c++/11/bits/erase_if.h:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
 /usr/include/SDL2/SDL_gesture.h:
 
 /usr/lib/llvm-15/lib/clang/15.0.7/include/xsaveintrin.h:
@@ -2906,28 +3193,6 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/c++/11/ext/string_conversions.h:
 
 /usr/include/c++/11/bits/exception_ptr.h:
-
-/usr/include/SDL2/SDL_hints.h:
-
-/usr/include/pthread.h:
-
-../../../include/MgrTex.h:
-
-/usr/include/c++/11/bits/ptr_traits.h:
-
-/usr/include/endian.h:
-
-/usr/include/stdint.h:
-
-/usr/include/c++/11/bits/erase_if.h:
-
-../../../src/Animation.cpp:
-
-/usr/include/SDL2/SDL_platform.h:
-
-/usr/include/c++/11/random:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -3027,7 +3292,27 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 
 /usr/include/c++/11/bits/basic_string.tcc:
 
+/usr/include/SDL2/SDL_hints.h:
+
+/usr/include/pthread.h:
+
+../../../include/MgrTex.h:
+
+../../../src/Animation.cpp:
+
+/usr/include/SDL2/SDL_platform.h:
+
+/usr/include/c++/11/random:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/ctype_inline.h:
+
 /usr/include/c++/11/limits:
+
+/usr/include/c++/11/bits/algorithmfwd.h:
+
+/usr/include/c++/11/bits/std_abs.h:
+
+/usr/include/c++/11/bits/stl_heap.h:
 
 /usr/include/c++/11/ostream:
 
@@ -3080,13 +3365,3 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp \
 /usr/include/SDL2/SDL_atomic.h:
 
 /usr/include/SDL2/SDL_audio.h:
-
-/usr/include/SDL2/SDL_error.h:
-
-/usr/include/SDL2/SDL_endian.h:
-
-/usr/lib/llvm-15/lib/clang/15.0.7/include/avx512ifmavlintrin.h:
-
-/usr/include/c++/11/bits/stringfwd.h:
-
-/usr/include/SDL2/SDL_rwops.h:

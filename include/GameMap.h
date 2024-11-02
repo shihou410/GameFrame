@@ -16,9 +16,9 @@ public:
   std::string name;
 
   GameMap(int);
-  GameMap(const char *, int);
+  GameMap(const std::string &, int);
 
-  void load(const char *path);
+  void load(const std::string &path);
   void render(SDL_Renderer *);
 
   void begin();

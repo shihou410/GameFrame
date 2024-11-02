@@ -1,5 +1,6 @@
 #pragma once
 
+#include <string>
 #include <vector>
 class Game;
 class GameMap;
@@ -19,7 +20,7 @@ private:
   void clear();
 
 public:
-  int loadMap(const char *, int);
+  int loadMap(const std::string &, int);
   void addGameMap(GameMap *);
   void goNext();
   GameMap *getMap(int);
