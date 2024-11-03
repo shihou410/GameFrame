@@ -93,23 +93,36 @@ void playerUpDate(GameEntity *player) {
   fireCd = std::fmax(fireCd - game->deltaTime, 0);
 
   auto input = game->mgrInput;
+  int playerAniId = player->getAnimaId();
   if (input->check_keyboard(k_a)) {
     player->pos[0] -= 130 * game->deltaTime;
-    player->setAnimaId(pa_left);
+    playerAniId = pa_left;
   } else if (input->check_keyboard(k_d)) {
     player->pos[0] += 130 * game->deltaTime;
-    player->setAnimaId(pa_right);
+    playerAniId = pa_right;
   } else if (input->check_keyboard(k_w)) {
     player->pos[1] -= 130 * game->deltaTime;
-    player->setAnimaId(pa_up);
+    playerAniId = pa_up;
   } else if (input->check_keyboard(k_s)) {
     player->pos[1] += 130 * game->deltaTime;
-    player->setAnimaId(pa_down);
+    playerAniId = pa_down;
   }
+  player->setAnimaId(playerAniId);
   if (input->check_keyboard(k_space)) {
     if (fireCd == 0) {
-      fireCd = 1;
-      createBullet(player->pos[0], player->pos[1], ba_down);
+      fireCd = 0.3;
+      int animaId = ba_down;
+      if (playerAniId == pa_down) {
+        animaId = ba_down;
+      } else if (playerAniId == pa_up) {
+        animaId = ba_up;
+      } else if (playerAniId == pa_left) {
+        animaId = ba_left;
+      } else if (playerAniId == pa_right) {
+        animaId = ba_right;
+      }
+
+      createBullet(player->pos[0], player->pos[1], ba_up);
     }
   }
 }
