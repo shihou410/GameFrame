@@ -69,10 +69,24 @@ include CMakeFiles/GameFrame.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GameFrame.dir/flags.make
 
+CMakeFiles/GameFrame.dir/src/Actor.cpp.o: CMakeFiles/GameFrame.dir/flags.make
+CMakeFiles/GameFrame.dir/src/Actor.cpp.o: ../../../src/Actor.cpp
+CMakeFiles/GameFrame.dir/src/Actor.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameFrame.dir/src/Actor.cpp.o"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Actor.cpp.o -MF CMakeFiles/GameFrame.dir/src/Actor.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Actor.cpp.o -c /root/myGame/GameFrame/src/Actor.cpp
+
+CMakeFiles/GameFrame.dir/src/Actor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameFrame.dir/src/Actor.cpp.i"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/myGame/GameFrame/src/Actor.cpp > CMakeFiles/GameFrame.dir/src/Actor.cpp.i
+
+CMakeFiles/GameFrame.dir/src/Actor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/Actor.cpp.s"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/Actor.cpp -o CMakeFiles/GameFrame.dir/src/Actor.cpp.s
+
 CMakeFiles/GameFrame.dir/src/Animation.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/Animation.cpp.o: ../../../src/Animation.cpp
 CMakeFiles/GameFrame.dir/src/Animation.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GameFrame.dir/src/Animation.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameFrame.dir/src/Animation.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Animation.cpp.o -MF CMakeFiles/GameFrame.dir/src/Animation.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Animation.cpp.o -c /root/myGame/GameFrame/src/Animation.cpp
 
 CMakeFiles/GameFrame.dir/src/Animation.cpp.i: cmake_force
@@ -83,10 +97,38 @@ CMakeFiles/GameFrame.dir/src/Animation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/Animation.cpp.s"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/Animation.cpp -o CMakeFiles/GameFrame.dir/src/Animation.cpp.s
 
+CMakeFiles/GameFrame.dir/src/Bullet.cpp.o: CMakeFiles/GameFrame.dir/flags.make
+CMakeFiles/GameFrame.dir/src/Bullet.cpp.o: ../../../src/Bullet.cpp
+CMakeFiles/GameFrame.dir/src/Bullet.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameFrame.dir/src/Bullet.cpp.o"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Bullet.cpp.o -MF CMakeFiles/GameFrame.dir/src/Bullet.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Bullet.cpp.o -c /root/myGame/GameFrame/src/Bullet.cpp
+
+CMakeFiles/GameFrame.dir/src/Bullet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameFrame.dir/src/Bullet.cpp.i"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/myGame/GameFrame/src/Bullet.cpp > CMakeFiles/GameFrame.dir/src/Bullet.cpp.i
+
+CMakeFiles/GameFrame.dir/src/Bullet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/Bullet.cpp.s"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/Bullet.cpp -o CMakeFiles/GameFrame.dir/src/Bullet.cpp.s
+
+CMakeFiles/GameFrame.dir/src/Enemy.cpp.o: CMakeFiles/GameFrame.dir/flags.make
+CMakeFiles/GameFrame.dir/src/Enemy.cpp.o: ../../../src/Enemy.cpp
+CMakeFiles/GameFrame.dir/src/Enemy.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameFrame.dir/src/Enemy.cpp.o"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Enemy.cpp.o -MF CMakeFiles/GameFrame.dir/src/Enemy.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Enemy.cpp.o -c /root/myGame/GameFrame/src/Enemy.cpp
+
+CMakeFiles/GameFrame.dir/src/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameFrame.dir/src/Enemy.cpp.i"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/myGame/GameFrame/src/Enemy.cpp > CMakeFiles/GameFrame.dir/src/Enemy.cpp.i
+
+CMakeFiles/GameFrame.dir/src/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/Enemy.cpp.s"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/Enemy.cpp -o CMakeFiles/GameFrame.dir/src/Enemy.cpp.s
+
 CMakeFiles/GameFrame.dir/src/Game.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/Game.cpp.o: ../../../src/Game.cpp
 CMakeFiles/GameFrame.dir/src/Game.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GameFrame.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameFrame.dir/src/Game.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Game.cpp.o -MF CMakeFiles/GameFrame.dir/src/Game.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Game.cpp.o -c /root/myGame/GameFrame/src/Game.cpp
 
 CMakeFiles/GameFrame.dir/src/Game.cpp.i: cmake_force
@@ -100,7 +142,7 @@ CMakeFiles/GameFrame.dir/src/Game.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o: ../../../src/GameCamera.cpp
 CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o -MF CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o.d -o CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o -c /root/myGame/GameFrame/src/GameCamera.cpp
 
 CMakeFiles/GameFrame.dir/src/GameCamera.cpp.i: cmake_force
@@ -114,7 +156,7 @@ CMakeFiles/GameFrame.dir/src/GameCamera.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: ../../../src/GameEntity.cpp
 CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o -MF CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o.d -o CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o -c /root/myGame/GameFrame/src/GameEntity.cpp
 
 CMakeFiles/GameFrame.dir/src/GameEntity.cpp.i: cmake_force
@@ -128,7 +170,7 @@ CMakeFiles/GameFrame.dir/src/GameEntity.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/GameMap.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/GameMap.cpp.o: ../../../src/GameMap.cpp
 CMakeFiles/GameFrame.dir/src/GameMap.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GameFrame.dir/src/GameMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameFrame.dir/src/GameMap.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/GameMap.cpp.o -MF CMakeFiles/GameFrame.dir/src/GameMap.cpp.o.d -o CMakeFiles/GameFrame.dir/src/GameMap.cpp.o -c /root/myGame/GameFrame/src/GameMap.cpp
 
 CMakeFiles/GameFrame.dir/src/GameMap.cpp.i: cmake_force
@@ -142,7 +184,7 @@ CMakeFiles/GameFrame.dir/src/GameMap.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: ../../../src/MgrAnima.cpp
 CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o -MF CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o.d -o CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.o -c /root/myGame/GameFrame/src/MgrAnima.cpp
 
 CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/GameFrame.dir/src/MgrAnima.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: ../../../src/MgrEntity.cpp
 CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o -MF CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o.d -o CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o -c /root/myGame/GameFrame/src/MgrEntity.cpp
 
 CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.i: cmake_force
@@ -170,7 +212,7 @@ CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o: ../../../src/MgrInput.cpp
 CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o -MF CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o.d -o CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o -c /root/myGame/GameFrame/src/MgrInput.cpp
 
 CMakeFiles/GameFrame.dir/src/MgrInput.cpp.i: cmake_force
@@ -184,7 +226,7 @@ CMakeFiles/GameFrame.dir/src/MgrInput.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: ../../../src/MgrMap.cpp
 CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o -MF CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o.d -o CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o -c /root/myGame/GameFrame/src/MgrMap.cpp
 
 CMakeFiles/GameFrame.dir/src/MgrMap.cpp.i: cmake_force
@@ -198,7 +240,7 @@ CMakeFiles/GameFrame.dir/src/MgrMap.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: ../../../src/MgrTex.cpp
 CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o -MF CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o.d -o CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o -c /root/myGame/GameFrame/src/MgrTex.cpp
 
 CMakeFiles/GameFrame.dir/src/MgrTex.cpp.i: cmake_force
@@ -209,10 +251,24 @@ CMakeFiles/GameFrame.dir/src/MgrTex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/MgrTex.cpp.s"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/MgrTex.cpp -o CMakeFiles/GameFrame.dir/src/MgrTex.cpp.s
 
+CMakeFiles/GameFrame.dir/src/Player.cpp.o: CMakeFiles/GameFrame.dir/flags.make
+CMakeFiles/GameFrame.dir/src/Player.cpp.o: ../../../src/Player.cpp
+CMakeFiles/GameFrame.dir/src/Player.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GameFrame.dir/src/Player.cpp.o"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Player.cpp.o -MF CMakeFiles/GameFrame.dir/src/Player.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Player.cpp.o -c /root/myGame/GameFrame/src/Player.cpp
+
+CMakeFiles/GameFrame.dir/src/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GameFrame.dir/src/Player.cpp.i"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/myGame/GameFrame/src/Player.cpp > CMakeFiles/GameFrame.dir/src/Player.cpp.i
+
+CMakeFiles/GameFrame.dir/src/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GameFrame.dir/src/Player.cpp.s"
+	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/myGame/GameFrame/src/Player.cpp -o CMakeFiles/GameFrame.dir/src/Player.cpp.s
+
 CMakeFiles/GameFrame.dir/src/Utils.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/src/Utils.cpp.o: ../../../src/Utils.cpp
 CMakeFiles/GameFrame.dir/src/Utils.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GameFrame.dir/src/Utils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GameFrame.dir/src/Utils.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/src/Utils.cpp.o -MF CMakeFiles/GameFrame.dir/src/Utils.cpp.o.d -o CMakeFiles/GameFrame.dir/src/Utils.cpp.o -c /root/myGame/GameFrame/src/Utils.cpp
 
 CMakeFiles/GameFrame.dir/src/Utils.cpp.i: cmake_force
@@ -226,7 +282,7 @@ CMakeFiles/GameFrame.dir/src/Utils.cpp.s: cmake_force
 CMakeFiles/GameFrame.dir/main.cpp.o: CMakeFiles/GameFrame.dir/flags.make
 CMakeFiles/GameFrame.dir/main.cpp.o: ../../../main.cpp
 CMakeFiles/GameFrame.dir/main.cpp.o: CMakeFiles/GameFrame.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GameFrame.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GameFrame.dir/main.cpp.o"
 	/usr/bin/clang++-15 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/GameFrame.dir/main.cpp.o -MF CMakeFiles/GameFrame.dir/main.cpp.o.d -o CMakeFiles/GameFrame.dir/main.cpp.o -c /root/myGame/GameFrame/main.cpp
 
 CMakeFiles/GameFrame.dir/main.cpp.i: cmake_force
@@ -239,7 +295,10 @@ CMakeFiles/GameFrame.dir/main.cpp.s: cmake_force
 
 # Object files for target GameFrame
 GameFrame_OBJECTS = \
+"CMakeFiles/GameFrame.dir/src/Actor.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/Animation.cpp.o" \
+"CMakeFiles/GameFrame.dir/src/Bullet.cpp.o" \
+"CMakeFiles/GameFrame.dir/src/Enemy.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/Game.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o" \
@@ -249,13 +308,17 @@ GameFrame_OBJECTS = \
 "CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o" \
+"CMakeFiles/GameFrame.dir/src/Player.cpp.o" \
 "CMakeFiles/GameFrame.dir/src/Utils.cpp.o" \
 "CMakeFiles/GameFrame.dir/main.cpp.o"
 
 # External object files for target GameFrame
 GameFrame_EXTERNAL_OBJECTS =
 
+GameFrame: CMakeFiles/GameFrame.dir/src/Actor.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/Animation.cpp.o
+GameFrame: CMakeFiles/GameFrame.dir/src/Bullet.cpp.o
+GameFrame: CMakeFiles/GameFrame.dir/src/Enemy.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/Game.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/GameCamera.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/GameEntity.cpp.o
@@ -265,11 +328,12 @@ GameFrame: CMakeFiles/GameFrame.dir/src/MgrEntity.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/MgrInput.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/MgrMap.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/MgrTex.cpp.o
+GameFrame: CMakeFiles/GameFrame.dir/src/Player.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/src/Utils.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/main.cpp.o
 GameFrame: CMakeFiles/GameFrame.dir/build.make
 GameFrame: CMakeFiles/GameFrame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable GameFrame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/root/myGame/GameFrame/out/build/Clang 15.0.7 x86_64-pc-linux-gnu/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GameFrame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GameFrame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

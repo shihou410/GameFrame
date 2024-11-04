@@ -1,7 +1,7 @@
 #include "../include/Animation.h"
 #include "../include/Game.h"
 #include "../include/MgrTex.h"
-
+#include "iostream"
 Animation::Animation()
     : id(-1), texId(0), interval(0.f), isLoop(false), isStop(true),
       passTime(0.f), width(0), height(0) {
@@ -13,7 +13,7 @@ void Animation::load(const char *file) {}
 void Animation::update() {
   if (this->isStop || this->frames.empty())
     return;
-
+  
   auto game = Game::getInstance();
 
   this->passTime += game->deltaTime;

@@ -84,7 +84,11 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -148,7 +152,11 @@
 				8,
 				9,
 				10,
-				11
+				11,
+				12,
+				13,
+				14,
+				15
 			]
 		}
 	],
@@ -157,7 +165,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "src/Actor.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "src/Animation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Bullet.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Enemy.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -212,6 +238,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/MgrTex.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/Player.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

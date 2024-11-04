@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Actor.o: src/Actor.cpp.o
+.PHONY : src/Actor.o
+
+# target to build an object file
+src/Actor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Actor.cpp.o
+.PHONY : src/Actor.cpp.o
+
+src/Actor.i: src/Actor.cpp.i
+.PHONY : src/Actor.i
+
+# target to preprocess a source file
+src/Actor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Actor.cpp.i
+.PHONY : src/Actor.cpp.i
+
+src/Actor.s: src/Actor.cpp.s
+.PHONY : src/Actor.s
+
+# target to generate assembly for a file
+src/Actor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Actor.cpp.s
+.PHONY : src/Actor.cpp.s
+
 src/Animation.o: src/Animation.cpp.o
 .PHONY : src/Animation.o
 
@@ -176,6 +200,54 @@ src/Animation.s: src/Animation.cpp.s
 src/Animation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Animation.cpp.s
 .PHONY : src/Animation.cpp.s
+
+src/Bullet.o: src/Bullet.cpp.o
+.PHONY : src/Bullet.o
+
+# target to build an object file
+src/Bullet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Bullet.cpp.o
+.PHONY : src/Bullet.cpp.o
+
+src/Bullet.i: src/Bullet.cpp.i
+.PHONY : src/Bullet.i
+
+# target to preprocess a source file
+src/Bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Bullet.cpp.i
+.PHONY : src/Bullet.cpp.i
+
+src/Bullet.s: src/Bullet.cpp.s
+.PHONY : src/Bullet.s
+
+# target to generate assembly for a file
+src/Bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Bullet.cpp.s
+.PHONY : src/Bullet.cpp.s
+
+src/Enemy.o: src/Enemy.cpp.o
+.PHONY : src/Enemy.o
+
+# target to build an object file
+src/Enemy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Enemy.cpp.o
+.PHONY : src/Enemy.cpp.o
+
+src/Enemy.i: src/Enemy.cpp.i
+.PHONY : src/Enemy.i
+
+# target to preprocess a source file
+src/Enemy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Enemy.cpp.i
+.PHONY : src/Enemy.cpp.i
+
+src/Enemy.s: src/Enemy.cpp.s
+.PHONY : src/Enemy.s
+
+# target to generate assembly for a file
+src/Enemy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Enemy.cpp.s
+.PHONY : src/Enemy.cpp.s
 
 src/Game.o: src/Game.cpp.o
 .PHONY : src/Game.o
@@ -393,6 +465,30 @@ src/MgrTex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/MgrTex.cpp.s
 .PHONY : src/MgrTex.cpp.s
 
+src/Player.o: src/Player.cpp.o
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/GameFrame.dir/build.make CMakeFiles/GameFrame.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/Utils.o: src/Utils.cpp.o
 .PHONY : src/Utils.o
 
@@ -429,9 +525,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Actor.o"
+	@echo "... src/Actor.i"
+	@echo "... src/Actor.s"
 	@echo "... src/Animation.o"
 	@echo "... src/Animation.i"
 	@echo "... src/Animation.s"
+	@echo "... src/Bullet.o"
+	@echo "... src/Bullet.i"
+	@echo "... src/Bullet.s"
+	@echo "... src/Enemy.o"
+	@echo "... src/Enemy.i"
+	@echo "... src/Enemy.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
@@ -459,6 +564,9 @@ help:
 	@echo "... src/MgrTex.o"
 	@echo "... src/MgrTex.i"
 	@echo "... src/MgrTex.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/Utils.o"
 	@echo "... src/Utils.i"
 	@echo "... src/Utils.s"

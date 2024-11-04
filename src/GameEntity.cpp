@@ -9,7 +9,12 @@
 #include <iostream>
 
 GameEntity::GameEntity()
-    : active(false), lastState(false), pos(), halfSize(), animaId(-1), id(-1) {}
+    : active(false), lastState(false), pos(), halfSize(), animaId(-1), id(-1) {
+  this->onEnter = std::function<void(GameEntity *)>();
+  this->onUpdate = std::function<void(GameEntity *)>();
+  this->onDraw = std::function<void(GameEntity *)>();
+  this->onDestroy = std::function<void(GameEntity *)>();
+}
 
 void GameEntity::enter() {
   if (this->onEnter) {
@@ -24,7 +29,6 @@ void GameEntity::update() {
 void GameEntity::draw() {
   Game *game = Game::getInstance();
   auto anima = game->mgrAnima->getAnima(this->animaId);
-
   if (!anima) {
     SDL_SetRenderDrawColor(game->getRenderer(), 255, 0, 0, 255);
     vec2 min;
@@ -57,6 +61,7 @@ void GameEntity::destroy() {
   Game *game = Game::getInstance();
   game->mgrAnima->stopAnima(this->animaId);
   this->animaId = -1;
+  // this->data.clear();
   if (this->onDestroy) {
     this->onDestroy(this);
   }

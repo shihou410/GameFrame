@@ -20,6 +20,7 @@ private:
 
 public:
   int createEntity(int animaId, int x, int y, int w = 100, int h = 100);
+  int addEntity(GameEntity *);
   GameEntity *getEntity(int);
   void destroyEntity(int);
 };

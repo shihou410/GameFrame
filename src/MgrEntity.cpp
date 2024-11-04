@@ -20,7 +20,7 @@ void MgrEntity::update() {
       item++;
     } else {
       entity->destroy();
-      this->awaitEntitys.push_back(item->second);
+      this->entityPool.push_back(item->second);
       item = this->activeEntitys.erase(item);
     }
   }
@@ -44,16 +44,19 @@ int MgrEntity::createEntity(int animaId, int x, int y, int w, int h) {
     this->entityPool.pop_back();
   }
 
-  entity->id = this->starId;
   entity->animaId = animaId;
   entity->pos[0] = x;
   entity->pos[1] = y;
   entity->halfSize[0] = w / 2.f;
   entity->halfSize[1] = h / 2.f;
+
+  return this->addEntity(entity);
+}
+
+int MgrEntity::addEntity(GameEntity *entity) {
   entity->active = true;
-
+  entity->id = this->starId;
   this->awaitEntitys.push_back(entity);
-
   this->starId++;
   return entity->id;
 }
