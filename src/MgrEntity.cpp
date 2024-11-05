@@ -1,7 +1,14 @@
 #include "../include/MgrEntity.h"
 #include "../include/GameEntity.h"
 #include <algorithm>
+#include <iostream>
+#include <string>
 MgrEntity::MgrEntity(Game *game) : starId(0) { this->game = game; }
+
+void MgrEntity::initGrid(int w, int h) {
+  this->gw = w;
+  this->gh = h;
+}
 
 void MgrEntity::update() {
 
@@ -16,7 +23,7 @@ void MgrEntity::update() {
     auto entity = item->second;
 
     if (entity->active) {
-      entity->update();
+      this->addEntityToGrid(entity);
       item++;
     } else {
       entity->destroy();
@@ -24,6 +31,12 @@ void MgrEntity::update() {
       item = this->activeEntitys.erase(item);
     }
   }
+  for (auto item : this->activeEntitys) {
+    auto entity = item.second;
+    entity->update();
+  }
+
+  this->removeEntityFromGrid();
 }
 
 void MgrEntity::draw() {
@@ -90,4 +103,25 @@ void MgrEntity::clear() {
   }
   this->activeEntitys.clear();
   this->entityPool.clear();
+}
+
+void MgrEntity::addEntityToGrid(GameEntity *entity) {
+  auto x = std::to_string(static_cast<int>(entity->pos[0] / this->gw));
+  auto y = std::to_string(static_cast<int>(entity->pos[1] / this->gh));
+  auto key = x + y;
+  this->data[key].push_back(entity);
+}
+
+std::vector<GameEntity *> &MgrEntity::getEntityFromGrid(GameEntity *entity) {
+  auto x = std::to_string(static_cast<int>(entity->pos[0] / this->gw));
+  auto y = std::to_string(static_cast<int>(entity->pos[1] / this->gh));
+  auto key = x + y;
+  return this->data[key];
+}
+
+void MgrEntity::removeEntityFromGrid() {
+  for (auto item : this->data) {
+    item.second.clear();
+  }
+  this->data.clear();
 }

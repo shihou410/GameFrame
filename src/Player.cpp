@@ -42,6 +42,11 @@ void Player::on_enter() { Actor::on_enter(); }
 void Player::on_update() {
   auto game = Game::getInstance();
 
+  auto entitys = game->mgrEntity->getEntityFromGrid(this);
+
+  // if (!entitys.empty()) {
+  std::cout << entitys.size() << std::endl;
+
   this->fireCd = std::fmax(this->fireCd - game->deltaTime, 0);
 
   this->animaId = this->animas[static_cast<int>(this->dir)];

@@ -33,8 +33,8 @@ int main(int, char **) {
 
   auto player = new Player(rx, ry);
   auto enemy = new Enemy(200, 200);
-  auto enemy1 = new Enemy(200, 200);
-  auto enemy2 = new Enemy(200, 200);
+  // auto enemy1 = new Enemy(200, 200);
+  // auto enemy2 = new Enemy(200, 200);
 
   game->gameRun();
   game->gameClean();

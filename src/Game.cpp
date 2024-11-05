@@ -28,9 +28,8 @@ void Game::init(int w, int h) {
   this->width = w;
   this->height = h;
   SDL_Init(SDL_INIT_EVENTS);
-  this->gWindow =
-      SDL_CreateWindow("Game", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
-                       this->width, this->height, SDL_WINDOW_SHOWN);
+  this->gWindow = SDL_CreateWindow("Game", 2430, SDL_WINDOWPOS_CENTERED,
+                                   this->width, this->height, SDL_WINDOW_SHOWN);
   if (this->gWindow == nullptr) {
     SDL_Log("窗口创建失败: %s", SDL_GetError());
     return;
@@ -47,6 +46,8 @@ void Game::init(int w, int h) {
   this->mgrEntity = new MgrEntity(this);
   this->mgrInput = new MgrInput(this);
   this->mgrAnima = new MgrAnima(this);
+
+  this->mgrEntity->initGrid(100, 100);
 
   this->startTime = SDL_GetTicks() / 1000.f;
   this->lastTime = this->startTime;

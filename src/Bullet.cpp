@@ -76,6 +76,7 @@ void Bullet::on_update() {
   }
   if (max[1] > game->getWindowH() - this->halfSize[1]) {
     game->mgrEntity->destroyEntity(this->id);
+    // game->camera->playShake(6.0f);
   }
 }
 void Bullet::on_draw() {}
